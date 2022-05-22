@@ -133,3 +133,8 @@ document.querySelector('header .action-area .actions button:nth-child(2)').oncli
         window.open(GITHUB_URL)
     }
 }
+
+// handle window resize (nav)
+window.onresize = () => {
+    renderActiveMenuIndicator()
+}
