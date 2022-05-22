@@ -3,7 +3,7 @@ let ACTIVE_MENU = "HOME"
 const headerTexts = {
     "HOME": {
         "header .action-area h1": "It's Never been Easier",
-        "header .action-area .actions button:nth-child(1)": "<img src=\"assets/img/icons/download_icon.png\">DOWNLOAD",
+        "header .action-area .actions button:nth-child(1)": "DOWNLOAD",
         "header .action-area .actions button:nth-child(2)": "READ MORE"
     }, "DOWNLOAD": {
         "header .action-area h1": "CustoMiner",

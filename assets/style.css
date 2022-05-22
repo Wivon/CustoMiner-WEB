@@ -545,6 +545,7 @@ footer {
         align-items: center;
         width: 100%;
         height: max-content;
+        justify-content: start;
     }
 
     header .action-area h1{
@@ -553,7 +554,6 @@ footer {
         width: 100%;
         margin-bottom: 35px;
     }
-
 
     header .action-area p{
         font-size: var(--info-size);
@@ -576,28 +576,43 @@ footer {
     }
 }
 
-@media (max-width: 560px) {
-    header .view-area {
-        height: 200px;
-        margin-bottom: 45px;
-    }
-
-    .HOME header .view-area img {
-        transform: scale(1);
-    }
-
-    header .action-area .actions{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 850px) {
-    body > .container {
-        padding: 20px 40px 0 40px;
-    }
-}
-
 @media (max-width: 600px) {
+
+    .nav {
+        height: 60px;
+    }
+
+    .nav .left .actions .activeMenuIndicator {
+        transform: translateY(28.5px); 
+    }
+
+    .nav .left img {
+        display: none;
+    }
+
+    .nav .left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav .left .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav .left .actions a {
+        margin-right: 0;
+        width: 50%;
+        text-align: center;
+        font-size: calc(var(--card-text-size) * 1.2);
+    }
+
+    body {
+        background-size: 100%;
+    }
+
     body > .container {
         padding: 10px 15px 0 15px;
     }
@@ -621,5 +636,43 @@ footer {
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    body.DOWNLOAD header .action-area .actions button:nth-child(1) {
+        padding: 15px 30px;
+        font-size: 22px;
+    }
+
+    body.DOWNLOAD header .action-area .actions button:nth-child(1) img {
+        height: 28px;
+    }
+
+    .container section h2 {
+        font-size: var(--subtitle-size);
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .container section span {
+        font-size: var(--info-size);
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 560px) {
+    header .view-area {
+        height: 200px;
+        margin-bottom: 45px;
+    }
+
+    .HOME header .view-area img {
+        transform: scale(1);
+    }
+
+    header .action-area .actions{
+        flex-direction: column;
     }
 }
